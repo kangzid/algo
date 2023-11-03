@@ -2,23 +2,25 @@ rak = []
 bukuSudahDibaca = []
 bukuBelumDibaca = []
 
+
 def sudahDibaca(b):
     bukuSudahDibaca.append(b)
+
 
 def belumDibaca(b):
     bukuBelumDibaca.append(b)
 
+
 def rakBuku():
-    return {
-        "bukuSudahDibaca": bukuSudahDibaca,
-        "bukuBelumDibaca": bukuBelumDibaca
-    }
+    return {"bukuSudahDibaca": bukuSudahDibaca, "bukuBelumDibaca": bukuBelumDibaca}
+
 
 def hitungTotalBuku(bukuList):
     if not bukuList:
         return 0
     else:
         return 1 + hitungTotalBuku(bukuList[1:])
+
 
 while True:
     print("RAK BUKU")
@@ -47,10 +49,10 @@ while True:
         print("Semua buku: ", rak["bukuSudahDibaca"] + rak["bukuBelumDibaca"])
     elif pilihMenu == 3:
         rak = rakBuku()
-        print("Buku yang sudah dibaca: ", rak["bukuSudahDibaca"])
+        print("Buku yang sudah dibaca: ", bukuSudahDibaca)
     elif pilihMenu == 4:
         rak = rakBuku()
-        print("Buku yang belum dibaca: ", rak["bukuBelumDibaca"])
+        print("Buku yang belum dibaca: ", bukuBelumDibaca)
     elif pilihMenu == 5:
         rak = rakBuku()
         totalBuku = hitungTotalBuku(rak["bukuSudahDibaca"] + rak["bukuBelumDibaca"])
