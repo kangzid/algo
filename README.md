@@ -1,5 +1,6 @@
 # algo🤷‍♂️
- ▫️penjelasan singkat tentang setiap bagian kode:
+
+   ▫️penjelasan singkat tentang setiap bagian kode:
 
 1. Variabel bukuSudahDibaca dan bukuBelumDibaca: Ini adalah dua list yang digunakan untuk menyimpan buku yang sudah dibaca dan buku yang belum dibaca.
 
@@ -33,6 +34,42 @@ Kode ini mengelola daftar buku yang sudah dibaca dan belum dibaca,menambahkan li
 @zaenal arifin
 @zidan alfian
 @nande
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
