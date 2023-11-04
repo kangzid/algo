@@ -32,6 +32,7 @@ while True:
     print("5. Hitung total buku di rak")
     print("6. Keluar")
 
+    rak = rakBuku()
     pilihMenu = int(input("Pilih menu (1-6): "))
     if pilihMenu == 1:
         buku = input("Masukkan judul buku: ")
@@ -45,16 +46,20 @@ while True:
         else:
             print("Pilihan tidak valid.")
     elif pilihMenu == 2:
-        rak = rakBuku()
         print("Semua buku: ", rak["bukuSudahDibaca"] + rak["bukuBelumDibaca"])
     elif pilihMenu == 3:
-        rak = rakBuku()
-        print("Buku yang sudah dibaca: ", bukuSudahDibaca)
+        print("buku sudah dibaca")
+        print("====================")
+        for bsd in bukuSudahDibaca:
+            print(bsd)
+        print("====================")
     elif pilihMenu == 4:
-        rak = rakBuku()
-        print("Buku yang belum dibaca: ", bukuBelumDibaca)
+        print("buku belum dibaca")
+        print("====================")
+        for bbd in bukuBelumDibaca:
+            print(bbd)
+        print("====================")
     elif pilihMenu == 5:
-        rak = rakBuku()
         totalBuku = hitungTotalBuku(rak["bukuSudahDibaca"] + rak["bukuBelumDibaca"])
         print("Total buku di rak: ", totalBuku)
     elif pilihMenu == 6:
