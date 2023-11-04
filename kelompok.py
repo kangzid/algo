@@ -13,8 +13,11 @@ def rakBuku():
         "bukuBelumDibaca": bukuBelumDibaca
     }
 
-def hitungTotalBuku():
-    return len(bukuSudahDibaca) + len(bukuBelumDibaca)
+def hitungTotalBukuRekursif(bukuList):
+    if not bukuList:
+        return 0
+    else:
+        return 1 + hitungTotalBukuRekursif(bukuList[1:])  #rekursif di sini
 
 def tampilkanSemuaBuku():
     rak = rakBuku()
@@ -72,7 +75,7 @@ while True:
         print("Buku yang belum dibaca: ", rak["bukuBelumDibaca"])
         print("|=======================================|")
     elif pilihMenu == 5:
-        totalBuku = hitungTotalBuku()
+        totalBuku = hitungTotalBukuRekursif(bukuSudahDibaca + bukuBelumDibaca)
         print("|=========================|")
         print("   Total buku di rak: ", totalBuku )
         print("|=========================|")
