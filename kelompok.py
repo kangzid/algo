@@ -57,9 +57,10 @@ while True:
             belumDibaca(buku)
             print("  |====================================|")
             print("  | Buku belum dibaca: ", bukuBelumDibaca)
-            #print("  |====================================|")
+            #print("  =====================================|")
         else:
-            print("     Maaf Pilihan tidak valid.")
+            print("  |------------------------------------|")
+            print("  |    ! Maaf Pilihan tidak valid.     |")
     elif pilihMenu == 2:
         print("  |====================================|")
         print("  |            Semua Buku :            |")
@@ -69,9 +70,9 @@ while True:
     elif pilihMenu == 3:
         print("  |====================================|")
         print("  |         buku sudah dibaca :        |")
-        print("  |====================================|")
+        print("  |------------------------------------|")
         for bsd in bukuSudahDibaca:
-            print(bsd.rjust(10))
+            print(bsd.rjust(27))
             
         #print(bsd)
         
@@ -79,9 +80,9 @@ while True:
     elif pilihMenu == 4:
         print("  |====================================|")
         print("  |         buku belum dibaca :        |")
-        print("  |====================================|")
+        print("  |------------------------------------|")
         for bbd in bukuBelumDibaca:
-            print(bbd.rjust(10))
+            print(bbd.rjust(30))
         
     elif pilihMenu == 5:
         print("  |====================================|")
