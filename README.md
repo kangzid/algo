@@ -1,8 +1,8 @@
-# algo🤷‍♂️
+ # algo🤷‍♂️
 
    ▫️penjelasan singkat tentang setiap bagian kode:
 
-1. Variabel bukuSudahDibaca dan  bukuBelumDibaca: Ini adalah dua list yang digunakan untuk menyimpan buku yang sudah dibaca dan buku yang belum dibaca.
+1. Variabel bukuSudahDibaca dan bukuBelumDibaca: Ini adalah dua list yang digunakan untuk menyimpan buku yang sudah dibaca dan buku yang belum dibaca.
 
 2. Fungsi sudahDibaca dan belumDibaca: Fungsi ini digunakan untuk menambahkan buku ke daftar buku yang sudah dibaca atau belum dibaca.
 
